@@ -1,2 +1,5 @@
-# 2026-10-07-cng-forum-presentation
-Material for the presentation at CNG Forum 2026
+# CLOUD-NES: Towards a Cloud-Native Research Community in the Netherlands.
+
+Material for the [CNG Forum 2026] presentation @ Snowbird, Utah.
+
+[CNG Forum 2026]: https://2026.cloudnativegeo.org/

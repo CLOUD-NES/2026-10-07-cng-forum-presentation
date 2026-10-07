@@ -24,7 +24,7 @@ author:
     affiliations: '[University of Twente](https://www.utwente.nl)'
   - name: Martin Brandt
     affiliations: '[SURF](https://www.surf.nl)'
-  - name: Maarteen Plieger
+  - name: Maarten Plieger
     affiliations: '[KNMI](https://www.knmi.nl)'
 
 date: 2026-10-07
@@ -50,12 +50,12 @@ Cloud-native tools are available, yet *download and process locally* is still co
 Not just *accessing* cloud-native data, but being able to *use* it.
 
 ::: {.incremental}
+- Not systematically part of GIS / geoinformatics curricula.
 - Few hands-on, domain-specific training materials.
 - Tutorials teach the *how* of COGs, STAC, Zarr, not the *why* or *when*.
-- Not systematically part of GIS / geoinformatics curricula.
 - Fast-moving tools: tutorials break or go stale.
 - Focus on consuming data, not on creating or serving it.
-- HPC-oriented infrastructure: easier to get supercomputer access than object storage.
+- Research infrastructure has grown around HPC: object storage is newer territory.
 :::
 
 ## {.center .centered}
@@ -80,10 +80,9 @@ The project "CLOUD-NES" with file number ICT.001.TDCC.016 of the research progra
 
 ## Infrastructure + Skills + Community = Sustainable Practices {.centered-title}
 
-
-- **Infrastructure**: cloud-based access, open data, shared compute
-- **Skills**: access, but also process and publish with cloud-native tools
-- **Community**: learn, experiment, and advance best practices together
+- **Infrastructure**: cloud-based access for benchmarks and capacity building.
+- **Skills**: access, but also process and publish with cloud-native tools.
+- **Community**: learn, experiment, and advance best practices together.
 
 ## 1. Infrastructure
 
@@ -120,13 +119,161 @@ Not an operational platform: a space to experiment and learn.
 ::: {.column .centered width="50%"}
 ![](fig/surf-logo.png){height=120}
 
-National research ICT infrastructure
+National research ICT infrastructure:
+
+**Central, managed, free to use for Dutch researchers.**
 :::
 
 ::: {.column .centered width="50%"}
 ![](fig/ut-itc-logo.png){height=120}
 
-On-premise deployment
+On-premise deployment:
+
+**Demonstrates applicability across different infrastructures.**
 :::
 
 ::::
+
+## Datasets {.smaller}
+
+* Datasets from PDOK (*Publieke Dienstverlening Op de Kaart*) and KNMI.
+* Openly available in the cloud, via OGC services and file download.
+* Cloud-native formats are not yet common: a good place to learn.
+
+| Dataset | Current format | Cloud-native target |
+|---|---|---|
+| AHN DEM (raster) | GeoTIFF | COG |
+| Aerial imagery (RGB + NIR) | GeoTIFF | COG |
+| KNMI daily temperature | NetCDF3 | Zarr |
+
+## Benchmarks {.smaller}
+
+Quantitative, reproducible evidence of *when* cloud-native pays off.
+
+Badly tuned chunking can be *worse* than the original.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**What we compare**
+
+- Original files (GeoTIFF, NetCDF) vs. COG and Zarr.
+- Virtual cubes on top of the originals: STAC, VRT, virtual Zarr.
+- Chunk shape, chunk size, compression.
+:::
+
+::: {.column width="50%"}
+**How we measure**
+
+- Different scenarios, e.g. *deep* (time series) vs. *wide* (mosaic).
+- Metrics: not only time to access, also data transferred and number of HTTP requests.
+- Co-located vs. remote analysis, on both platforms.
+:::
+
+::::
+
+## Where we stand
+
+- Development versions of both deployments are up and running.
+- Now working on datasets and benchmarks.
+- Early demonstration of STAC catalog for AHN data products.
+- Building tools to facilitate monitoring the *amount of data transferred* and the *number of requests* performed when accessing data:
+
+  [{{< fa brands github >}} `CLOUD-NES/cloudgeometer`](https://github.com/CLOUD-NES/cloudgeometer)
+
+::: {.fragment}
+- ❤️ `stac-geoparquet`, `rustac`, `rustfs`.
+:::
+
+## 2. Trainings
+
+- Translate best practices and lessons learned into training material.
+- Organize two types of trainings for researchers:
+  - how to *access* cloud-optimized datasets.
+  - how to *generate* and *distribute* datasets using cloud-native tooling.
+- Six hands-on events, with open training materials.
+- Embed these into eScience Center trainings and University of Twente curricula.
+
+## 3. Community {.smaller}
+
+**Symposium on Cloud-Native Data in Natural and Engineering Sciences**
+
+:::: {.columns}
+
+::: {.column width="58%"}
+1 April 2026, Utrecht: 35 participants from research, data infrastructures, and policy.
+
+- Keynotes from thriveGeo, OpenGeoHub, and moreGeo: *why cloud-native data?*
+- Stakeholder perspectives from Geonovum, KNMI, SURF, eScience Center, UT-ITC.
+- Breakout session on gaps, needs, and potential solutions.
+:::
+
+::: {.column width="42%"}
+![](fig/symposium.jpg)
+:::
+
+::::
+
+::: {.fragment}
+A second symposium in mid-2027 will share results and lessons learned.
+:::
+
+## What we heard {.smaller}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+**Formats & standards**
+
+- Many formats to choose from: hard for newcomers.
+- Need guidance, best practices, and examples showing *why* a new format is better.
+- Help in choosing among existing standards.
+:::
+
+::: {.column width="33%"}
+**Infrastructure**
+
+- Wish for more choice and portability.
+- Cloud costs are hard to forecast.
+- Need local options and cost monitoring.
+:::
+
+::: {.column width="33%"}
+**Training**
+
+- Fragmented materials that go stale quickly.
+- Need time and incentives to change.
+- Use-case specific advice; Carpentries-style lessons co-designed with users.
+:::
+
+::::
+
+::: aside
+All outcomes: [`doi.org/10.5281/zenodo.19918473`](https://doi.org/10.5281/zenodo.19918473)
+:::
+
+## {.center .centered .smaller}
+
+CLOUD-NES aims to investigate and promote cloud-native research data practices in the Natural and Engineering Sciences (NES).
+
+**Formats to benchmark? Datasets to convert? Scenarios we should test?**
+
+::: {.r-hstack style="gap: 40px;"}
+![](fig/ut-itc-logo.png){height=80}
+
+![](fig/escience-center-logo.png){height=80}
+
+![](fig/surf-logo.png){height=80}
+
+![](fig/knmi-logo.jpg){height=80}
+:::
+
+[`cloudnes.org`](https://cloudnes.org){preview-link="false"}
+
+[`github.com/CLOUD-NES`](https://github.com/CLOUD-NES){preview-link="false"}
+
+[`zenodo.org/communities/cloud-nes`](https://zenodo.org/communities/cloud-nes){preview-link="false"}
+
+::: {.footer style="max-width: 80%; left: 0; right: 0;"}
+The project "CLOUD-NES" with file number ICT.001.TDCC.016 of the research programme NWO Thematic Digital Competence Centers (TDCCs) 2023-2 is financed by the Dutch Research Council (NWO).
+:::

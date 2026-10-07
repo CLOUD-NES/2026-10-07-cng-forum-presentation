@@ -60,7 +60,7 @@
     "href": "slides.html#benchmarks",
     "title": "CLOUD-NES",
     "section": "Benchmarks",
-    "text": "Benchmarks\nQuantitative, reproducible evidence of when cloud-native pays off.\nBadly tuned chunking can be worse than the original.\n\n\nWhat we compare\n\nOriginal files (GeoTIFF, NetCDF) vs. COG and Zarr.\nVirtual cubes on top of the originals: STAC, VRT, virtual Zarr.\nChunk shape, chunk size, compression.\n\n\nHow we measure\n\nDifferent scenarios, e.g. deep (time series) vs. wide (mosaic).\nMetrics: not only time to access, also data transferred and number of HTTP requests.\nCo-located vs. remote analysis, on both platforms."
+    "text": "Benchmarks\nQuantitative, reproducible evidence of when cloud-native pays off.\nBadly tuned cloud-optimized datasets can be worse than the original.\n\n\nWhat we compare\n\nOriginal files (GeoTIFF, NetCDF) vs. COG and Zarr.\nVirtual cubes on top of the originals and transformed: STAC, VRT, virtual Zarr.\nChunk shape, chunk size, compression.\n\n\nHow we measure\n\nDifferent scenarios, e.g. deep (time series) vs. wide (mosaic).\nMetrics: not only time to access, also data transferred and number of HTTP requests.\nCo-located vs. remote analysis, on both platforms."
   },
   {
     "objectID": "slides.html#where-we-stand",
@@ -70,11 +70,11 @@
     "text": "Where we stand\n\nDevelopment versions of both deployments are up and running.\nNow working on datasets and benchmarks.\nEarly demonstration of STAC catalog for AHN data products.\nBuilding tools to facilitate monitoring the amount of data transferred and the number of requests performed when accessing data:\n CLOUD-NES/cloudgeometer\n\n\n\n❤️ stac-geoparquet, rustac, rustfs."
   },
   {
-    "objectID": "slides.html#trainings",
-    "href": "slides.html#trainings",
+    "objectID": "slides.html#skills",
+    "href": "slides.html#skills",
     "title": "CLOUD-NES",
-    "section": "2. Trainings",
-    "text": "2. Trainings\n\nTranslate best practices and lessons learned into training material.\nOrganize two types of trainings for researchers:\n\nhow to access cloud-optimized datasets.\nhow to generate and distribute datasets using cloud-native tooling.\n\nSix hands-on events, with open training materials.\nEmbed these into eScience Center trainings and University of Twente curricula."
+    "section": "2. Skills",
+    "text": "2. Skills\n\nTranslate best practices and lessons learned into training material.\nOrganize two types of trainings for researchers:\n\nhow to access cloud-optimized datasets.\nhow to generate and distribute datasets using cloud-native tooling.\n\nSix hands-on events, with open training materials.\nEmbed these into eScience Center trainings and University of Twente curricula."
   },
   {
     "objectID": "slides.html#community",

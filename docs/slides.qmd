@@ -108,7 +108,7 @@ STAC catalog
 
 ::::
 
-::: {.fragment .centered}
+::: {.centered}
 Not an operational platform: a space to experiment and learn.
 :::
 
@@ -150,7 +150,7 @@ On-premise deployment:
 
 Quantitative, reproducible evidence of *when* cloud-native pays off.
 
-Badly tuned chunking can be *worse* than the original.
+Badly tuned cloud-optimized datasets can be *worse* than the original.
 
 :::: {.columns}
 
@@ -158,7 +158,7 @@ Badly tuned chunking can be *worse* than the original.
 **What we compare**
 
 - Original files (GeoTIFF, NetCDF) vs. COG and Zarr.
-- Virtual cubes on top of the originals: STAC, VRT, virtual Zarr.
+- Virtual cubes on top of the originals and transformed: STAC, VRT, virtual Zarr.
 - Chunk shape, chunk size, compression.
 :::
 
@@ -185,7 +185,7 @@ Badly tuned chunking can be *worse* than the original.
 - ❤️ `stac-geoparquet`, `rustac`, `rustfs`.
 :::
 
-## 2. Trainings
+## 2. Skills
 
 - Translate best practices and lessons learned into training material.
 - Organize two types of trainings for researchers:

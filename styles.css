@@ -1,0 +1,6 @@
+.reveal section.centered-title h2 { text-align: center; }
+
+/* Row of columns filling the space below the title, content centered */
+.reveal .columns.centered { display: flex; align-items: center; justify-content: center; height: 500px; }
+
+.reveal .centered { text-align: center; vertical-align: middle; }

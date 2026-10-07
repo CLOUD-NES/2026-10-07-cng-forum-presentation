@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "slides.html#section",
+    "href": "slides.html#section",
+    "title": "CLOUD-NES",
+    "section": "",
+    "text": "www.esciencecenter.nl"
+  },
+  {
+    "objectID": "slides.html#section-1",
+    "href": "slides.html#section-1",
+    "title": "CLOUD-NES",
+    "section": "",
+    "text": "Cloud-native tools are available, yet download and process locally is still common practice."
+  },
+  {
+    "objectID": "slides.html#challenges-for-researchers",
+    "href": "slides.html#challenges-for-researchers",
+    "title": "CLOUD-NES",
+    "section": "Challenges for researchers",
+    "text": "Challenges for researchers\nNot just accessing cloud-native data, but being able to use it.\n\nNot systematically part of GIS / geoinformatics curricula.\nFew hands-on, domain-specific training materials.\nTutorials teach the how of COGs, STAC, Zarr, not the why or when.\nFast-moving tools: tutorials break or go stale.\nFocus on consuming data, not on creating or serving it.\nResearch infrastructure has grown around HPC: object storage is newer territory."
+  },
+  {
+    "objectID": "slides.html#section-2",
+    "href": "slides.html#section-2",
+    "title": "CLOUD-NES",
+    "section": "",
+    "text": "CLOUD-NES aims to investigate and promote cloud-native research data practices in the Natural and Engineering Sciences (NES).\n\n\n\n\n\n\ncloudnes.org\n\nThe project “CLOUD-NES” with file number ICT.001.TDCC.016 of the research programme NWO Thematic Digital Competence Centers (TDCCs) 2023-2 is financed by the Dutch Research Council (NWO)."
+  },
+  {
+    "objectID": "slides.html#infrastructure-skills-community-sustainable-practices",
+    "href": "slides.html#infrastructure-skills-community-sustainable-practices",
+    "title": "CLOUD-NES",
+    "section": "Infrastructure + Skills + Community = Sustainable Practices",
+    "text": "Infrastructure + Skills + Community = Sustainable Practices\n\nInfrastructure: cloud-based access for benchmarks and capacity building.\nSkills: access, but also process and publish with cloud-native tools.\nCommunity: learn, experiment, and advance best practices together."
+  },
+  {
+    "objectID": "slides.html#infrastructure",
+    "href": "slides.html#infrastructure",
+    "title": "CLOUD-NES",
+    "section": "1. Infrastructure",
+    "text": "1. Infrastructure\n\n\n\nObject store\n\n\nJupyterHub\n\n\nSTAC catalog\n\n\nNot an operational platform: a space to experiment and learn."
+  },
+  {
+    "objectID": "slides.html#twin-platforms",
+    "href": "slides.html#twin-platforms",
+    "title": "CLOUD-NES",
+    "section": "Twin platforms",
+    "text": "Twin platforms\n\n\n\nNational research ICT infrastructure:\nCentral, managed, free to use for Dutch researchers.\n\n\nOn-premise deployment:\nDemonstrates applicability across different infrastructures."
+  },
+  {
+    "objectID": "slides.html#datasets",
+    "href": "slides.html#datasets",
+    "title": "CLOUD-NES",
+    "section": "Datasets",
+    "text": "Datasets\n\nDatasets from PDOK (Publieke Dienstverlening Op de Kaart) and KNMI.\nOpenly available in the cloud, via OGC services and file download.\nCloud-native formats are not yet common: a good place to learn.\n\n\n\n\nDataset\nCurrent format\nCloud-native target\n\n\n\n\nAHN DEM (raster)\nGeoTIFF\nCOG\n\n\nAerial imagery (RGB + NIR)\nGeoTIFF\nCOG\n\n\nKNMI daily temperature\nNetCDF3\nZarr"
+  },
+  {
+    "objectID": "slides.html#benchmarks",
+    "href": "slides.html#benchmarks",
+    "title": "CLOUD-NES",
+    "section": "Benchmarks",
+    "text": "Benchmarks\nQuantitative, reproducible evidence of when cloud-native pays off.\nBadly tuned chunking can be worse than the original.\n\n\nWhat we compare\n\nOriginal files (GeoTIFF, NetCDF) vs. COG and Zarr.\nVirtual cubes on top of the originals: STAC, VRT, virtual Zarr.\nChunk shape, chunk size, compression.\n\n\nHow we measure\n\nDifferent scenarios, e.g. deep (time series) vs. wide (mosaic).\nMetrics: not only time to access, also data transferred and number of HTTP requests.\nCo-located vs. remote analysis, on both platforms."
+  },
+  {
+    "objectID": "slides.html#where-we-stand",
+    "href": "slides.html#where-we-stand",
+    "title": "CLOUD-NES",
+    "section": "Where we stand",
+    "text": "Where we stand\n\nDevelopment versions of both deployments are up and running.\nNow working on datasets and benchmarks.\nEarly demonstration of STAC catalog for AHN data products.\nBuilding tools to facilitate monitoring the amount of data transferred and the number of requests performed when accessing data:\n CLOUD-NES/cloudgeometer\n\n\n\n❤️ stac-geoparquet, rustac, rustfs."
+  },
+  {
+    "objectID": "slides.html#trainings",
+    "href": "slides.html#trainings",
+    "title": "CLOUD-NES",
+    "section": "2. Trainings",
+    "text": "2. Trainings\n\nTranslate best practices and lessons learned into training material.\nOrganize two types of trainings for researchers:\n\nhow to access cloud-optimized datasets.\nhow to generate and distribute datasets using cloud-native tooling.\n\nSix hands-on events, with open training materials.\nEmbed these into eScience Center trainings and University of Twente curricula."
+  },
+  {
+    "objectID": "slides.html#community",
+    "href": "slides.html#community",
+    "title": "CLOUD-NES",
+    "section": "3. Community",
+    "text": "3. Community\nSymposium on Cloud-Native Data in Natural and Engineering Sciences\n\n\n1 April 2026, Utrecht: 35 participants from research, data infrastructures, and policy.\n\nKeynotes from thriveGeo, OpenGeoHub, and moreGeo: why cloud-native data?\nStakeholder perspectives from Geonovum, KNMI, SURF, eScience Center, UT-ITC.\nBreakout session on gaps, needs, and potential solutions.\n\n\n\n\n\nA second symposium in mid-2027 will share results and lessons learned."
+  },
+  {
+    "objectID": "slides.html#what-we-heard",
+    "href": "slides.html#what-we-heard",
+    "title": "CLOUD-NES",
+    "section": "What we heard",
+    "text": "What we heard\n\n\nFormats & standards\n\nMany formats to choose from: hard for newcomers.\nNeed guidance, best practices, and examples showing why a new format is better.\nHelp in choosing among existing standards.\n\n\nInfrastructure\n\nWish for more choice and portability.\nCloud costs are hard to forecast.\nNeed local options and cost monitoring.\n\n\nTraining\n\nFragmented materials that go stale quickly.\nNeed time and incentives to change.\nUse-case specific advice; Carpentries-style lessons co-designed with users.\n\n\n\n\nAll outcomes: doi.org/10.5281/zenodo.19918473"
+  },
+  {
+    "objectID": "slides.html#section-3",
+    "href": "slides.html#section-3",
+    "title": "CLOUD-NES",
+    "section": "",
+    "text": "CLOUD-NES aims to investigate and promote cloud-native research data practices in the Natural and Engineering Sciences (NES).\nFormats to benchmark? Datasets to convert? Scenarios we should test?\n\n\n\n\n\n\ncloudnes.org\ngithub.com/CLOUD-NES\nzenodo.org/communities/cloud-nes\n\nThe project “CLOUD-NES” with file number ICT.001.TDCC.016 of the research programme NWO Thematic Digital Competence Centers (TDCCs) 2023-2 is financed by the Dutch Research Council (NWO)."
+  }
+]
